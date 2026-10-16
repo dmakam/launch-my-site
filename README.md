@@ -22,9 +22,12 @@ You talk to Claude like you'd talk to a web designer. It asks a few plain questi
 
 **In the Claude app (claude.ai or desktop)**
 
-1. Download this repo as a zip: **Code → Download ZIP**, or download [`launch-my-site.zip`](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip) directly.
-2. In Claude, open your Skills settings and upload the zip as a custom skill.
-3. Start a chat and say something like: *"Build me a website for my bakery and put it on mybakery.com."*
+1. **Download [`launch-my-site.zip`](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip).** Use this link, not GitHub's green "Code → Download ZIP" button. That button names the folder `launch-my-site-main`, and Claude rejects a skill whose folder name doesn't match the skill name.
+2. **Turn on code execution** if it isn't already: Settings → Capabilities → "Code execution and file creation". On Team and Enterprise plans, an admin controls this.
+3. **Upload the skill.** Go to Customize → Skills, click **+**, choose **Create skill → Upload a skill**, and pick the zip. Then switch the skill on.
+4. **Start a chat** and say something like: *"Build me a website for my bakery and put it on mybakery.com."*
+
+Skills work on Free, Pro, Max, Team and Enterprise plans. See [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude) if the upload fails.
 
 **In Claude Code**
 
