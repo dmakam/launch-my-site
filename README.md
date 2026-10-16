@@ -20,7 +20,7 @@ You talk to Claude like you'd talk to a web designer. It asks a few plain questi
 
 **In the Claude app (claude.ai or desktop)**
 
-1. Download this repo as a zip: **Code → Download ZIP**, or grab `launch-my-site.zip` from the [latest release](../../releases/latest).
+1. Download this repo as a zip: **Code → Download ZIP**, or download [`launch-my-site.zip`](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip) directly.
 2. In Claude, open your Skills settings and upload the zip as a custom skill.
 3. Start a chat and say something like: *"Build me a website for my bakery and put it on mybakery.com."*
 
