@@ -1,5 +1,30 @@
 # Changelog
 
+## v3 (Oct 2026): professional-services experience
+
+The skill now runs like an agency engagement: a visible process, nothing missed, polished deliverables at every stage, and a clean handover.
+
+### Engagement
+- **Five phases with gates** (Discovery → Look → Build and check → Go live → Handover). Each ends with a recap and a clear yes (`references/engagement.md`).
+- **Project file** (`scripts/project.py`): business facts with sources, decisions with reasons, to-dos for owner and builder, approvals with dates, what's live. Resumes across sessions with `status`. Refuses to store passwords or keys.
+- **One-page brief** generated from the project file at the end of discovery.
+- **Quick competitor scan** in discovery.
+
+### Quality
+- **Copywriting and local SEO** (`references/copy-and-seo.md`): voice, page rules, no filler, no invented facts; titles, descriptions, structured business data, sitemap, robots, 404, Google Business consistency.
+- **QA report** (`scripts/qa_report.py`): pass/fail report with screenshots for a local folder or live site. Checks script errors, sideways scrolling at each width, images and descriptions, links and anchors, titles and descriptions, headings, share previews, favicon, phone tap targets and text size, placeholder text, forms that send nowhere, phone-number consistency, page weight, sitemap/robots/404 and business structured data.
+
+### Launch and handover
+- **Launch runbook** (`references/launch-runbook.md`): before/during/after checklists, redirects for old pages, rollback, one-week check.
+- **Email protection** (`scripts/dns_snapshot.py`): records DNS before launch and fails loudly if email (MX), SPF, DMARC, DKIM or verification records changed afterwards.
+- **Handover document** (`references/handover.md`): what's live, what was checked, what the owner owns, access removed, decisions, first 30 days, sources.
+
+### Testing
+- **Evals** (`evals/`): ten scripted owners (Wix bakery, plumber with domain only, lawyer on WordPress, on-behalf build, stuck owner, pushy owner, pasted password, unofficial fan site, returning owner, launch day) with must/should rules, a grading prompt, and fixtures. The QA report must catch all eight planted problems in `evals/fixtures/broken-site`.
+
+### Docs
+- **User guide** (`docs/how-to-use.md`).
+
 ## v2 (Oct 2026)
 
 Found by running the skill end to end for a sample HVAC business.

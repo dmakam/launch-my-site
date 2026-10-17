@@ -14,7 +14,7 @@ Don't uninstall or delete WordPress. Put the new static site in the same folder 
 
 ## (b) Keep WordPress, apply the new design
 
-### Rung 1: Invite
+### Rung 2: Invite
 
 Ask them (or the owner, in on-behalf mode) to add a user:
 
@@ -22,7 +22,7 @@ Ask them (or the owner, in on-behalf mode) to add a user:
 
 Editor can create and edit pages. Administrator is needed to install a theme or a page-builder plugin. Ask for the lowest role that works, and remind them at handover to remove the user if this was a one-off.
 
-### Rung 2: They log in, you do it with them
+### Rung 3: They log in, you do it with them
 
 They sign in to `theirdomain.com/wp-admin`. With a browser tool and their permission, create or edit pages yourself. Without one, guide them step by step.
 
@@ -36,7 +36,7 @@ Pick the lightest option that their setup supports:
 
 Always save as **Draft** first, share the preview link, and publish only after they say yes.
 
-### Rung 3: Credentials (repeat updates)
+### Rung 5: Credentials (repeat updates)
 
 A WordPress **Application Password** lets `scripts/publish_wordpress.py` create and update pages through WordPress's built-in API, with no login screens. Setup steps are in `credentials.md`. Pages are created as drafts unless the person has approved publishing.
 

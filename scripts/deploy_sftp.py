@@ -125,7 +125,7 @@ def main():
     print(f"Uploaded {len(plan)} file(s).")
     sftp.close()
     t.close()
-    print(f"Done. Now run: python verify_live.py {env['SITE_URL']}")
+    print(f"Done. Now run: python scripts/verify_live.py {env['SITE_URL']}")
 
 
 if __name__ == "__main__":

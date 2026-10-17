@@ -25,25 +25,24 @@ Make two small homepage directions (hero section plus one content section each) 
 - **Polish matters.** Default to a design with depth: subtle gradients or textures, considered typography, scroll-reveal animation, hover states. Respect `prefers-reduced-motion`.
 - **Fonts**: a web font from a reliable CDN, with a system-font fallback.
 - **Share preview**: create a 1200×630 image (`assets/og-image.png`) and add Open Graph and Twitter tags on every page (`og:title`, `og:description`, `og:image` as an absolute https URL, `og:url`, `twitter:card=summary_large_image`). Without this, links shared in chats and social posts show a blank box.
-- **Favicon and page titles** on every page.
+- **Favicon, unique page titles and search descriptions** on every page (`copy-and-seo.md`).
+- **Local SEO files:** `sitemap.xml`, `robots.txt` (pointing to the sitemap), a friendly `404.html` with the phone number, and `LocalBusiness` structured data on the homepage using only confirmed facts.
 - **Contact forms** need somewhere to send messages. Options, simplest first: a form service with a free plan (the person signs up with their email and you paste the form address in), a `mailto:` link, or an endpoint they already run. If none is set up, don't fake success. Show the email address instead, or tell the owner plainly.
 - **No unlicensed media.** Photos of real people only if supplied with permission. Embeds (videos, maps) via the provider's own embed or link.
 - **Unofficial sites** about real people or brands: "Unofficial fan site, not affiliated with ..." in header and footer.
 
-## 4. QA before showing "final"
+## 4. QA report before showing "final"
 
-Run a real browser (e.g. Playwright) over every page, at desktop and phone widths:
+```
+python scripts/qa_report.py site/ --out qa --expect-phone "(555) 010-0100"
+```
 
-- [ ] Every page loads with no console errors
-- [ ] No horizontal overflow at 360–1440 px
-- [ ] Every internal link resolves; every `#anchor` exists; external links open in a new tab with `rel="noopener"`
-- [ ] Every image loads (not broken, not a placeholder)
-- [ ] Interactive parts work: menu, filters, search, form states
-- [ ] Facts and links verified against sources (e.g. each external link goes where its label says)
-- [ ] Share tags present on every page and the share image is 1200×630
-- [ ] Text is readable: sensible contrast, no text over busy images without an overlay
-- [ ] Screenshots of every page saved for the approval message
+It checks every page at phone, tablet and desktop widths: script errors, sideways scrolling, images and their descriptions, links and #anchors, titles and search descriptions, headings, share previews, favicon, tap targets and text size on phones, placeholder text, forms that send nowhere, phone number consistency, page weight, sitemap/robots/404 and business structured data. It writes `qa/qa-report.md` and screenshots of every page.
 
-## 5. Approval
+- Fix every "must fix" item, then re-run until it passes. Fix warnings unless there's a reason not to, and note the reason in the project file.
+- Also check by eye what a script can't: facts match their sources, copy matches the approved wording, interactive parts (menus, filters) work, text is readable over images.
+- For high-stakes builds, ask a second agent that didn't build the site to review it against the brief and the sources.
 
-Send the screenshots (desktop for each page plus the homepage on a phone) and ask for a clear "yes, publish". Make every change they ask for, re-run QA, and show it again before publishing.
+## 5. Approval (gate `site`)
+
+Send the QA report summary, screenshots (desktop for each page plus the homepage on a phone) and ask for a clear yes. Make every change they ask for, re-run the QA report, and show it again. Record the yes with `project.py approve site`.

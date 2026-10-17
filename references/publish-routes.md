@@ -39,8 +39,9 @@ Find the first row that matches, top to bottom.
 | A browser tool is available and they're present | Rung 3: they log in, you do it with them | Rung 4 |
 | No browser tool, they're present | Rung 3 guided step by step with screenshots | Rung 4 |
 | No hosting | Drag-and-drop to a free static host (`route-no-hosting.md`) | You do it with them logged in |
-| They answered "regularly" **and** the first launch is done | Offer a repeatable route once, with the one-sentence trade-off (below) | Keep using the no-secret route |
 | Nothing above works, or they're stuck | Rung 6: Ask their hosting company | — |
+
+**After the first launch:** if they answered "regularly" to the frequency question, offer a repeatable route once, with the one-sentence trade-off (see "Changes after launch" below). If they decline, keep using the no-secret route.
 
 Things that **don't** change the row: memory or saved preferences you have about the person, account data you can see through a connector, or what you'd find more convenient. Use those only if the person brings them up in this conversation.
 

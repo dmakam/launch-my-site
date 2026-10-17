@@ -10,12 +10,17 @@ You talk to Claude like you'd talk to a web designer. It asks a few plain questi
 
 ## What it does
 
+It works like a small web agency: five phases (discovery, look, build and check, go live, handover), each ending with a short recap and your yes. New here? Read the [user guide](docs/how-to-use.md).
+
+
 - **Asks, in plain language.** One or two questions at a time: what the site is for, what visitors should do, what to read first. For common small businesses (home services, restaurants, salons, professional services, contractors) it already knows what usually matters and only asks about the gaps.
 - **Lets you pick a look by pointing.** It asks for websites you like and any logo or colours you already use. If you have nothing in mind, it shows four style samples with your business name on them.
 - **Shows you before anything goes live.** Two design directions, then the full site, with screenshots on desktop and phone. Nothing is published until you say "yes, publish it."
 - **Works out your hosting for you.** Give it your web address. It figures out whether you're on regular web hosting, WordPress, a site builder (Wix, Squarespace, Shopify, Webflow) or nothing yet, and tells you what it found.
 - **Uses the easiest way to publish.** In order: a "Connect" button, an email invite, you log in and Claude does the work while you watch, a file you drag in, or a message to your hosting company. Passwords and access codes are a last resort.
-- **Publishes safely.** It checks it's changing the right site, backs up anything it replaces, never deletes anything, and checks every page once it's live.
+- **Checks everything, and shows you.** A QA report covers every page on phone, tablet and desktop: links, images, search basics, your phone number on every page, forms that actually send.
+- **Publishes safely.** It protects your email settings, checks it's changing the right site, backs up anything it replaces, never deletes anything, and checks every page once it's live.
+- **Hands over properly.** A short handover document: what's live, what you own, access removed, and a checklist for your first 30 days.
 - **Works for you or for someone else.** Use it for your own business, or as a freelancer or friend building a site for someone who isn't in the conversation.
 
 ## Install
@@ -41,7 +46,10 @@ The skill includes helper scripts that Claude runs for you:
 
 | Script | What it does | Needs |
 |---|---|---|
+| `scripts/project.py` | Keeps the project file: facts, decisions, approvals, the brief | Python only |
 | `scripts/detect_site.py` | Finds out where a domain's website lives | `pip install requests` |
+| `scripts/dns_snapshot.py` | Protects email: records DNS before launch, compares after | `pip install requests` |
+| `scripts/qa_report.py` | Pass/fail QA report with screenshots | `pip install playwright requests` and `playwright install chromium` |
 | `scripts/style_cards.py` | Renders the style samples | `pip install playwright` and `playwright install chromium` |
 | `scripts/verify_live.py` | Checks every page, image and share preview once live | `pip install requests` |
 | `scripts/deploy_cpanel.py`, `deploy_sftp.py`, `publish_wordpress.py` | Repeatable publishing, only if you choose it | `requests`, plus `paramiko` for SFTP |
@@ -50,6 +58,7 @@ The skill includes helper scripts that Claude runs for you:
 
 ```
 SKILL.md                     the flow and the ground rules
+references/engagement.md     phases, gates, project file, brief, recaps
 references/interview.md      the questions, in plain words
 references/style-cards.md    the visual style menu
 references/industry-starters.md
@@ -58,9 +67,13 @@ references/publish-routes.md the decision table and the access ladder
 references/route-*.md        one guide per hosting situation
 references/credentials.md    last-resort access, step by step
 references/on-behalf.md      building for someone else
-references/build.md          design, build and QA checklist
-references/handover.md       going live and handing over
-scripts/                     detection, style cards, publishing, live checks
+references/copy-and-seo.md   voice, copywriting, local SEO
+references/build.md          design, build and QA
+references/launch-runbook.md go-live checklists, email protection, redirects
+references/handover.md       the handover document
+scripts/                     project file, detection, style cards, QA, DNS, publishing, live checks
+evals/                       scripted owner scenarios and grading
+docs/how-to-use.md           user guide
 ```
 
 ## Privacy and safety
@@ -71,7 +84,7 @@ scripts/                     detection, style cards, publishing, live checks
 
 ## Testing changes
 
-If you modify the skill, test it in a fresh chat with no memory (for example, an incognito chat in Claude), playing a business owner who isn't you. That way the results show what a first-time owner would see.
+If you modify the skill, run the scenarios in `evals/` in a fresh chat with no memory (for example, an incognito chat in Claude), playing the scripted owner. Grade with `evals/grade.md`. Ship only when every "must" rule passes.
 
 ## License
 

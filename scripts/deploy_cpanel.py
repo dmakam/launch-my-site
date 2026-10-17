@@ -145,7 +145,7 @@ def main():
             sys.exit(f"Upload failed in {rdir}: {json.dumps(bad)}")
         print(f"Uploaded {len(files)} file(s) to {rdir}")
 
-    print(f"Done. Now run: python verify_live.py {env['SITE_URL']}")
+    print(f"Done. Now run: python scripts/verify_live.py {env['SITE_URL']}")
 
 
 if __name__ == "__main__":

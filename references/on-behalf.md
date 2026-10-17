@@ -20,7 +20,7 @@ The builder is talking to you; the site owner isn't. Every access route must be 
    - Hosting: many hosting companies let an owner add a **user or collaborator with limited access** to the account (look for "Users", "Team", "Collaborators" or "Account access" in their dashboard). This is the cleanest route for hosting.
 2. **Owner sends files' worth of access, not passwords.** E.g. the owner creates a restricted FTP/SFTP account limited to the website folder, or authorizes the builder's SSH public key (the builder sends the public key; nothing secret travels to the builder). See `credentials.md`.
 3. **Short call, owner logs in.** The owner shares their screen or sits with the builder, logs in themselves, and the builder (with Claude) does the publish. Nothing changes hands.
-4. **Owner uploads the file.** The builder sends `site.zip` plus a three-step guide for the owner's provider (`route-hosting-panel.md`, rung 3).
+4. **Owner uploads the file.** The builder sends `site.zip` plus a three-step guide for the owner's provider (`route-hosting-panel.md`, rung 4: download and drag).
 5. **Owner asks their host's support** using a message the builder drafts.
 
 ## Write the owner's message for the builder

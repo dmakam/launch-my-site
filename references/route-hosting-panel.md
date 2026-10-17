@@ -10,11 +10,13 @@ One hosting account can serve several domains, each from its own folder. Uploadi
 - Tell the person in plain words: "Your account has two websites. I'll only change the one for yourname.com; yourothersite.com is in a different folder and won't be touched."
 - Look at what's already in the folder. If there's an existing site (WordPress, an old site, a "coming soon" page), plan to leave it in place or move it aside, never delete it.
 
+Rung numbers follow the ladder in `publish-routes.md` (rung 2, invite, rarely applies to plain hosting).
+
 ## Rung 1: Connect
 
-If the hosting company offers a connector for Claude, use it: they click Connect and approve on the company's page. Use whatever file or site actions it provides. If it can't upload files, it can still help you find the right account and domain. Combine with rung 2.
+If the hosting company offers a connector for Claude, use it: they click Connect and approve on the company's page. Use whatever file or site actions it provides. If it can't upload files, it can still help you find the right account and domain. Combine with rung 3.
 
-## Rung 2: They log in, you upload with them
+## Rung 3: They log in, you upload with them
 
 0. Ask permission first, using the script in `publish-routes.md` ("How to offer rung 3"). They type their own password; you never see it. Wait for a yes.
 1. Ask them to log in to their hosting account in their browser and open the file manager. Guide: "Look for something called **File Manager**. It might be under a heading like Files, Hosting, or Advanced. Tell me when you see a list of folders."
@@ -23,14 +25,14 @@ If the hosting company offers a connector for Claude, use it: they click Connect
 4. If the folder contains an existing `index.php` (common with WordPress), most servers pick `index.html` first, but not all. After upload, load the live homepage. If the old site still shows, add `DirectoryIndex index.html index.php` to the top of the folder's `.htaccess` file. Say what that does in plain words and get a yes first. Reversible: delete the line.
 5. Clean up: remove the uploaded .zip from the public folder (move it to the panel's trash, don't permanently delete).
 
-## Rung 3: Download and drag
+## Rung 4: Download and drag
 
 Give them `site.zip` and a guide written for their panel, three steps max per message:
 1. "Open File Manager and click into the folder called `public_html` (or the one I mention)."
 2. "Click **Upload**, choose `site.zip`, and wait until it says 100%."
 3. "Go back to the folder, right-click `site.zip`, choose **Extract**, and confirm. Then send me a screenshot."
 
-## Rung 4: Credentials for repeat updates
+## Rung 5: Credentials for repeat updates
 
 If they'll want regular changes, set up one of these once (`credentials.md`):
 - **Control panel API token** → `scripts/deploy_cpanel.py` (cPanel-compatible panels).
@@ -38,7 +40,7 @@ If they'll want regular changes, set up one of these once (`credentials.md`):
 
 Both scripts confirm the domain is served by that account, back up what they replace, upload, and verify.
 
-## Rung 5: Ask their hosting company
+## Rung 6: Ask their hosting company
 
 Draft the support message, attach `site.zip`, and they send it:
 

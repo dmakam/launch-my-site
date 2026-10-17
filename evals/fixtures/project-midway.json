@@ -1,0 +1,96 @@
+{
+  "business": "Maria's Bakery",
+  "domain": "mariasbakery.test",
+  "mode": "self",
+  "owner": {
+    "name": "Maria",
+    "contact": ""
+  },
+  "goal": "Get more pickup orders from people nearby",
+  "audience": "Locals looking for fresh bread",
+  "main_action": "Order for pickup",
+  "pages": [
+    "Home",
+    "Menu",
+    "About",
+    "Visit us"
+  ],
+  "look": {
+    "references": [],
+    "style": "Warm & local (style card 3)",
+    "logo": "supplied PNG",
+    "colours": [
+      "#c2562b",
+      "#f4e2cc"
+    ]
+  },
+  "hosting": {
+    "situation": "hosting-panel",
+    "summary": "Your domain and site are with a regular web host; it shows a coming-soon page.",
+    "route": "",
+    "change_frequency": "monthly"
+  },
+  "facts": [
+    {
+      "fact": "Open Tue-Sun 7am-3pm",
+      "source": "Google Business profile",
+      "confirmed": true,
+      "added": "2026-10-10 10:00"
+    },
+    {
+      "fact": "Family-run since 1998",
+      "source": "",
+      "confirmed": false,
+      "added": "2026-10-10 10:05"
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Warm & local style",
+      "why": "Owner picked style card 3",
+      "when": "2026-10-11 09:00"
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "task": "Send 5 photos of the shop and bread",
+      "owner": "owner",
+      "due": "2026-10-20",
+      "done": false
+    },
+    {
+      "id": 2,
+      "task": "Confirm the pickup ordering link",
+      "owner": "owner",
+      "due": "",
+      "done": false
+    },
+    {
+      "id": 3,
+      "task": "Write copy for all pages",
+      "owner": "me",
+      "due": "",
+      "done": false
+    }
+  ],
+  "approvals": {
+    "brief": {
+      "when": "2026-10-10 11:00",
+      "note": "yes in chat"
+    },
+    "look": {
+      "when": "2026-10-11 09:30",
+      "note": "picked direction A"
+    }
+  },
+  "live": [],
+  "not_included": [
+    "Legal pages (privacy, terms)",
+    "Paid ads",
+    "Stock photography",
+    "Ongoing edits unless agreed"
+  ],
+  "created": "2026-10-10 09:50",
+  "updated": "2026-10-11 09:30"
+}

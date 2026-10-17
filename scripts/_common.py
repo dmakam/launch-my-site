@@ -25,7 +25,7 @@ def load_env(path, keys):
 def require(env, keys):
     missing = [k for k in keys if not env.get(k)]
     if missing:
-        sys.exit(f"Missing in .env: {', '.join(missing)}. Copy .env.example to .env and fill it in.")
+        sys.exit(f"Missing in .env: {', '.join(missing)}. Copy env.example to .env and fill it in.")
 
 
 def site_files(site_dir):

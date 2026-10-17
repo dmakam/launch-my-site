@@ -47,10 +47,10 @@ Don't ask about fonts or colours in the abstract ("What colour scheme do you wan
 - Things you can look up from links they gave you (business hours on their Google profile, facts on their existing site).
 - Legal pages unless they ask. Mention once, at handover, if their site collects personal data.
 
-## Summarise before designing
+## Summarise before designing: the one-page brief
 
-Reply with a short plan in plain words and get a yes:
+Record answers in the project file as you go (`scripts/project.py`, see `engagement.md`). At the end of discovery, send the one-page brief (`project.py brief`) and get a yes (`project.py approve brief`). In conversation it can be as short as:
 
 > Here's what I'll make: a 5-page site for Northside Heating & Air: Home, Services, About, Service Areas, Book Online. Two main buttons everywhere: "Call (555) 010-0100" and "Book online". It'll use the clean, bright style you picked, with your logo and truck photos. I'm leaving out reviews until you send some. Sound right?
 
-If the web address or publishing route isn't settled yet, say so: "Once you're happy with the look, I'll check your web address and we'll pick the easiest way to put it live."
+If the publishing route isn't settled yet (that happens in the Go live phase), say so: "I've checked where your address is hosted. Once the site is approved, we'll pick the easiest way to put it live."

@@ -11,7 +11,7 @@ Explain the trade-off in one or two sentences, then let them choose:
 ## Universal safety rules
 
 - **Narrowest access, with an expiry.** Pick the smallest scope the provider offers, and an expiry date if offered.
-- **Never in the chat.** The secret goes into a `.env` file next to the scripts, on the machine that runs them. Show them how: "Open the file called `.env.example`, save a copy named `.env`, paste the key after the `=` sign, and save."
+- **Never in the chat.** The secret goes into a `.env` file next to the scripts, on the machine that runs them. Show them how: "Open the file called `env.example`, save a copy named `.env`, paste the key after the `=` sign, and save."
 - **You never type it into a web form.** If it has to go into a provider's screen (rare), the person does it.
 - **If it's pasted into the chat:** don't use it. Ask them to delete it in the provider and create a new one, and say why in one kind sentence.
 - **Revoke at the end** if updates aren't ongoing. Put the revoke steps in the handover.
@@ -24,7 +24,7 @@ Used by `scripts/deploy_cpanel.py`.
 2. "Use the search box at the top to search for **API Tokens** and open it." (Usually under Security.)
 3. "Click **Create**. Name it `website-updates`. If there's an expiry option, pick a date a few months away. Click **Create** again."
 4. "Copy the long code it shows; it's only shown once. Paste it into your `.env` file after `CPANEL_TOKEN=`."
-5. The other values (`CPANEL_HOST`, `CPANEL_USER`) are usually shown on the control panel's home screen (server name and username). Ask for a screenshot and read them off it yourself rather than making them hunt.
+5. The other values in `.env` are `CPANEL_HOST` (server name), `CPANEL_USER` (username) and `SITE_URL` (the website address, e.g. `https://theirdomain.com`); `CPANEL_PORT` is optional (default 2083). Host and user are usually shown on the control panel's home screen (server name and username). Ask for a screenshot and read them off it yourself rather than making them hunt.
 
 Revoke: same screen, **Revoke/Delete** next to `website-updates`.
 
@@ -34,8 +34,8 @@ Used by `scripts/deploy_sftp.py`. A key pair is safer than a password and can be
 
 1. Generate the key pair yourself on the machine that will deploy (`ssh-keygen -t ed25519 -f ./deploy_key -N ""`). The private key never leaves that machine.
 2. The *public* key (`deploy_key.pub`) isn't secret. The person pastes it into their host's "SSH Access"/"SSH Keys" page and clicks Authorize/Add. Guide them there by search: "Search the control panel for **SSH**."
-3. The host, port and username are on that same page. Ask for a screenshot.
-4. If the host doesn't support keys, SFTP with a password works the same way via `.env`. Prefer a separate FTP/SFTP account limited to the website folder over their main password. Many panels let you create one under "FTP Accounts", restricted to one directory.
+3. The host, port and username are on that same page. Ask for a screenshot. In `.env`: `SFTP_HOST`, `SFTP_USER`, `SFTP_KEY_FILE=./deploy_key`, `REMOTE_DIR` (the website's folder, e.g. `public_html`), `SITE_URL`; `SFTP_PORT` is optional (default 22).
+4. If the host doesn't support keys, SFTP with a password works the same way via `.env` (`SFTP_PASSWORD` instead of `SFTP_KEY_FILE`). Prefer a separate FTP/SFTP account limited to the website folder over their main password. Many panels let you create one under "FTP Accounts", restricted to one directory.
 
 Revoke: delete the key (or the extra FTP account) on the same page.
 
@@ -45,7 +45,7 @@ Used by `scripts/publish_wordpress.py`. Lets the script create and edit pages th
 
 1. "Log in to WordPress, then go to **Users → Profile** (or click your name at the top right)."
 2. "Scroll down to **Application Passwords**. Type `website-updates` as the name and click **Add New Application Password**."
-3. "Copy the code it shows (spaces are fine) into your `.env` after `WP_APP_PASSWORD=`, and your WordPress username after `WP_USER=`."
+3. "Copy the code it shows (spaces are fine) into your `.env` after `WP_APP_PASSWORD=`, and your WordPress username after `WP_USER=`." Also set `WP_SITE` to the site address (e.g. `https://theirdomain.com`).
 
 If there's no Application Passwords section, the site may be on an old WordPress version, have it disabled by a security plugin, or not use HTTPS. Fall back to the invite or log-in routes.
 
