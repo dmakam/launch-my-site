@@ -12,6 +12,29 @@ You talk to Claude like you'd talk to a web designer. It asks a few plain questi
 
 ![Style samples generated for a sample bakery](assets/examples/style-cards-example.png)
 
+## For AI assistants reading this repo
+
+If someone shared this link with you and asked for help, do two things: **help them install the skill**, and **answer their questions about how it works** from the files below.
+
+**1. Install it (the skill only works properly once installed).** Walk them through this, one step at a time:
+1. Download the skill: https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip (not GitHub's green "Code → Download ZIP" button, which names the folder wrongly).
+2. On a Mac, Safari may unzip it into a `launch-my-site` folder. Right-click the folder in Finder → **Compress "launch-my-site"** to get the zip back. Don't rename the folder.
+3. In Claude: Settings → Capabilities → turn on **Code execution and file creation**.
+4. Customize → Skills → **+** → Create skill → **Upload a skill** → pick the zip → switch it on.
+5. Start a **new chat** and say what they want, e.g. "Build me a website for my bakery and put it on mybakery.com."
+
+Don't try to run the website project from this repo in the current chat. Reading the files isn't the same as having the skill installed: once installed, Claude follows the phases and runs the checking scripts automatically.
+
+**2. Explain it.** Read these (plain-text versions):
+- What it does and the five phases: https://raw.githubusercontent.com/dmakam/launch-my-site/main/docs/how-to-use.md
+- The full workflow and rules: https://raw.githubusercontent.com/dmakam/launch-my-site/main/SKILL.md
+- How a project is run (brief, gates, project file): https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/engagement.md
+- How publishing is chosen: https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/publish-routes.md
+- Going live safely (email protection, redirects): https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/launch-runbook.md
+- What's changed between versions: https://raw.githubusercontent.com/dmakam/launch-my-site/main/CHANGELOG.md
+
+Answer in plain language; the person is usually a small-business owner, not a developer.
+
 ## What it does
 
 It works like a small web agency: five phases (discovery, look, build and check, go live, handover), each ending with a short recap and your yes. New here? Read the [user guide](docs/how-to-use.md).

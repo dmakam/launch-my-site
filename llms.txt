@@ -1,0 +1,22 @@
+# Launch My Site
+
+> A free Claude skill that takes a small-business owner from "I want a website" to a live, checked site on their own domain, in plain language, without sharing passwords. It runs like a small web agency: Discovery, Look, Build and check, Go live, Handover, each ending with the owner's yes.
+
+If a person shared this repository with you: help them install the skill (download https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip, on a Mac re-compress the folder if Safari unzipped it, turn on code execution, then Customize → Skills → + → Create skill → Upload a skill, switch it on, start a new chat), and answer their questions from the docs below. Don't run the workflow from the repo itself; it works properly once installed.
+
+## Docs
+- [User guide](https://raw.githubusercontent.com/dmakam/launch-my-site/main/docs/how-to-use.md): what happens in each phase and tips for owners
+- [Skill instructions](https://raw.githubusercontent.com/dmakam/launch-my-site/main/SKILL.md): the full workflow and ground rules
+- [README](https://raw.githubusercontent.com/dmakam/launch-my-site/main/README.md): install, features, file map
+
+## Reference
+- [Engagement](https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/engagement.md): phases, gates, project file, one-page brief
+- [Interview](https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/interview.md): the questions asked
+- [Publishing routes](https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/publish-routes.md): how the publishing method is chosen
+- [Launch runbook](https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/launch-runbook.md): email protection, redirects, rollback
+- [Handover](https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/handover.md): the handover document
+- [Copy and SEO](https://raw.githubusercontent.com/dmakam/launch-my-site/main/references/copy-and-seo.md): wording and local search basics
+
+## Optional
+- [Changelog](https://raw.githubusercontent.com/dmakam/launch-my-site/main/CHANGELOG.md)
+- [Test scenarios](https://raw.githubusercontent.com/dmakam/launch-my-site/main/evals/scenarios.md)
