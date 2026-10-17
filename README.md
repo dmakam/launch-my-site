@@ -32,6 +32,7 @@ It works like a small web agency: five phases (discovery, look, build and check,
 **In the Claude app (claude.ai or desktop)**
 
 1. **Download [`launch-my-site.zip`](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip).** Use this link, not GitHub's green "Code → Download ZIP" button. That button names the folder `launch-my-site-main`, and Claude rejects a skill whose folder name doesn't match the skill name.
+   *On a Mac, Safari unzips downloads automatically, so you'll get a `launch-my-site` folder instead. That's fine: right-click the folder in Finder, choose **Compress "launch-my-site"**, and upload the new `launch-my-site.zip`.*
 2. **Turn on code execution** if it isn't already: Settings → Capabilities → "Code execution and file creation". On Team and Enterprise plans, an admin controls this.
 3. **Upload the skill.** Go to Customize → Skills, click **+**, choose **Create skill → Upload a skill**, and pick the zip. Then switch the skill on.
 4. **Start a chat** and say something like: *"Build me a website for my bakery and put it on mybakery.com."*

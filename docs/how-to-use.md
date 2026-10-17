@@ -5,6 +5,7 @@ A practical guide for business owners, and for anyone building a site for someon
 ## Before you start (5 minutes, once)
 
 1. **Install the skill:** download [`launch-my-site.zip`](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip), then in Claude go to Customize → Skills → **+** → Create skill → Upload a skill, and switch it on.
+   On a Mac, Safari may unzip it into a `launch-my-site` folder. Right-click the folder in Finder → **Compress "launch-my-site"**, then upload that zip.
 2. **Turn on code execution** (Settings → Capabilities → "Code execution and file creation"). The skill runs small programs to check your site.
 3. **Optional, but it makes things smoother:** the Claude in Chrome extension. With it, Claude can do the publishing steps in your browser while you watch, after you've logged in yourself.
 
