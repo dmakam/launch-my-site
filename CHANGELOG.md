@@ -1,5 +1,16 @@
 # Changelog
 
+## v3.1 (Oct 2026): fixes from the first live test
+
+Found by running scenario 2 (plumber with a domain only) in a fresh chat.
+
+- **Address checked first.** If the owner gives a web address, it's checked in the first reply, before any design. In the test, the domain turned out to be for sale, which was only found after styles and logos.
+- **Styles shown as pictures only.** Never offered as a list of words.
+- **The brief is unskippable.** No design directions, logos or mockups before the owner's yes on the one-page brief; style cards are the only visuals allowed before it.
+- **New "address for sale / expired / someone else's" case** (`detect-host.md`): how to check ownership, recover an expired address, or offer affordable alternatives with first-year and renewal prices.
+- **Easier to start.** The skill description now covers casual requests ("make me a website", "get my business online", "redo my website"), and the docs recommend starting with "Use the Launch My Site skill to…".
+- Evals: scenario 2 and the global rules now check address-first, picture-only styles and brief-before-design.
+
 ## v3 (Oct 2026): professional-services experience
 
 The skill now runs like an agency engagement: a visible process, nothing missed, polished deliverables at every stage, and a clean handover.

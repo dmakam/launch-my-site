@@ -19,11 +19,15 @@ A practical guide for business owners, and for anyone building a site for someon
 
 ## Start it
 
-Open a new chat and say what you want in your own words:
+Open a **new chat** and name the skill. That's the most reliable way to start it:
 
-> "Build me a website for my bakery and put it on mybakery.com."
+> "Use the Launch My Site skill to build a website for my bakery on mybakery.com."
 
-> "I'm building a site for my aunt's dental clinic. She owns brightsmile.com."
+> "Use the Launch My Site skill. I'm building a site for my aunt's dental clinic; she owns brightsmile.com."
+
+Asking in your own words ("I need a website for my plumbing business") usually works too. If Claude starts answering without the skill (no style samples, no brief), say "Please use the Launch My Site skill."
+
+**If it doesn't start at all:** check the skill is switched on (Customize → Skills), code execution is on (Settings → Capabilities), and you're in a new chat.
 
 That's it. Claude takes it from there.
 

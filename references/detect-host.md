@@ -52,6 +52,21 @@ Say what you found and ask for a yes. Use the wording for their situation:
 - **No address yet:**
   > No problem. Tell me a few names you like and I'll check which are available and what they cost, including the yearly renewal. I won't buy anything without your OK.
 
+## The address is for sale, expired or owned by someone else
+
+Detection shows a "for sale", "buy this domain" or parked page, or the address belongs to an unrelated business. Stop and sort this out **before any design work**. Everything else depends on it.
+
+> I checked **theirdomain.com**. Right now it shows a page saying the address is **for sale** (with a price of [price]). That usually means one of three things: someone else owns it and is selling it; you owned it and it expired; or it's yours and a "for sale" setting was switched on by mistake.
+>
+> Could you search your email for "theirdomain" and look for a receipt or renewal notice? Tell me which company it's from and roughly when. That tells us whether it's really yours.
+
+Then branch:
+- **It's theirs (receipt found):** guide them to their registrar to turn off the for-sale/parking setting, then continue with the no-hosting route.
+- **It expired recently:** registrars often allow recovery for a limited time after expiry. Write the message to send their registrar's support.
+- **It's someone else's:** don't recommend buying a premium address. Offer 3–5 available alternatives close to the business name (check availability), each with the **first-year and renewal price**, and buy nothing without a clear yes. Update the project file with the new address.
+
+Never assume they own an address because they said so. Confirm before building anything on it.
+
 ## If they don't recognise the company name
 
 > That's normal. Search your email for "yourbusiness.com" or "hosting". You'll usually find a receipt from the company. Or check your card statement for a yearly charge. I'll wait.

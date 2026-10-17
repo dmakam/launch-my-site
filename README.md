@@ -2,9 +2,9 @@
 
 **A free Claude skill that takes anyone from "I want a website" to a live site on their own domain, in about an hour, with no technical knowledge needed.**
 
-### ⬇️ [Download launch-my-site.zip (v3)](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip)
+### ⬇️ [Download launch-my-site.zip (v3.1)](https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip)
 
-Then upload it in Claude: Customize → Skills → **+** → Create skill → Upload a skill. [Full install steps](#install) · [User guide](docs/how-to-use.md)
+Then upload it in Claude: Customize → Skills → **+** → Create skill → Upload a skill. Start a new chat with: *"Use the Launch My Site skill to build my website."* [Full install steps](#install) · [User guide](docs/how-to-use.md)
 
 You talk to Claude like you'd talk to a web designer. It asks a few plain questions about your business, shows you style samples with your own name on them, builds the site, checks it on desktop and phone, and helps you put it live on your own web address. It doesn't ask you to find passwords or learn what "DNS" means.
 
@@ -21,7 +21,7 @@ If someone shared this link with you and asked for help, do two things: **help t
 2. On a Mac, Safari may unzip it into a `launch-my-site` folder. Right-click the folder in Finder → **Compress "launch-my-site"** to get the zip back. Don't rename the folder.
 3. In Claude: Settings → Capabilities → turn on **Code execution and file creation**.
 4. Customize → Skills → **+** → Create skill → **Upload a skill** → pick the zip → switch it on.
-5. Start a **new chat** and say what they want, e.g. "Build me a website for my bakery and put it on mybakery.com."
+5. Start a **new chat** and name the skill, e.g. "Use the Launch My Site skill to build a website for my bakery on mybakery.com."
 
 Don't try to run the website project from this repo in the current chat. Reading the files isn't the same as having the skill installed: once installed, Claude follows the phases and runs the checking scripts automatically.
 
@@ -58,7 +58,7 @@ It works like a small web agency: five phases (discovery, look, build and check,
    *On a Mac, Safari unzips downloads automatically, so you'll get a `launch-my-site` folder instead. That's fine: right-click the folder in Finder, choose **Compress "launch-my-site"**, and upload the new `launch-my-site.zip`.*
 2. **Turn on code execution** if it isn't already: Settings → Capabilities → "Code execution and file creation". On Team and Enterprise plans, an admin controls this.
 3. **Upload the skill.** Go to Customize → Skills, click **+**, choose **Create skill → Upload a skill**, and pick the zip. Then switch the skill on.
-4. **Start a chat** and say something like: *"Build me a website for my bakery and put it on mybakery.com."*
+4. **Start a new chat** and name the skill, which is the most reliable way to start it: *"Use the Launch My Site skill to build a website for my bakery on mybakery.com."* (Asking in your own words, like "I need a website for my bakery", usually works too.)
 
 Skills work on Free, Pro, Max, Team and Enterprise plans. See [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude) if the upload fails.
 

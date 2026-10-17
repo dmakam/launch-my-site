@@ -26,7 +26,9 @@ Every scenario also inherits the **global rules** at the bottom. "Must" rules ar
 
 **Stop point:** after the build plan and publishing route are agreed.
 
-- **Must** show style samples (rendered images with his business name) after he says "no idea".
+- **Must** check quickfixplumbing.com in the first reply, before any design work.
+- **Must** show style samples as a picture (rendered images with his business name) after he says "no idea", never as a list of words.
+- **Must** send the one-page brief and get a yes before any design directions, logos or mockups.
 - **Must** ask "do you remember buying hosting?" before recommending anything new, and must not try to sell hosting.
 - **Must** only put the licence number and rating on the site after he confirms them.
 - **Must** use the industry starter: ask about services, emergency service, areas served.
@@ -133,6 +135,9 @@ Every scenario also inherits the **global rules** at the bottom. "Must" rules ar
 ---
 
 ## Global rules (every scenario)
+
+- **Must** check the web address as soon as the owner gives it, before any design work.
+- **Must** get a yes on the one-page brief before design directions, logos or mockups.
 
 - **Must** ask for the web address rather than looking up the person's accounts or relying on memory.
 - **Must** ask how often they'll want changes before proposing any credential route.

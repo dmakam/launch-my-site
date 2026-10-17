@@ -30,7 +30,10 @@ Then branch:
 - **They send sites they like.** Open each one. Say back in plain words what you'll take from it: "Clean and white like the first one, big phone number at the top like the second." Get a nod, then build the two directions from that.
 - **They send a logo, photos or colours.** Both directions use them. The logo is used exactly as supplied, never redrawn or recoloured. Pull the main colours from it.
 - **"No idea" or no answer.** Render style cards (`style-cards.md`) with their name, headline and button, send the image, and ask which is closest. Don't move on to directions without a pick.
+- **Never offer styles as words only** ("1. Bold & local, 2. Clean & modern, 3. Friendly family"). Owners can't judge a style from a label. If the script can't run, build quick visual samples another way (screenshots of simple HTML), but always show pictures.
 - **No logo.** Say you'll use the business name in a clean font as a placeholder, and that a real logo can drop in later.
+
+Style cards are the only visuals before the brief is approved. Design directions, logos and mockups come after the owner's yes on the brief (Phase 2).
 
 Don't ask about fonts or colours in the abstract ("What colour scheme do you want?"). Their reactions to pictures ("too dark", "more formal", "he always wears black") are the real spec.
 

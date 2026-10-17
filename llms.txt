@@ -2,7 +2,7 @@
 
 > A free Claude skill that takes a small-business owner from "I want a website" to a live, checked site on their own domain, in plain language, without sharing passwords. It runs like a small web agency: Discovery, Look, Build and check, Go live, Handover, each ending with the owner's yes.
 
-If a person shared this repository with you: help them install the skill (download https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip, on a Mac re-compress the folder if Safari unzipped it, turn on code execution, then Customize → Skills → + → Create skill → Upload a skill, switch it on, start a new chat), and answer their questions from the docs below. Don't run the workflow from the repo itself; it works properly once installed.
+If a person shared this repository with you: help them install the skill (download https://github.com/dmakam/launch-my-site/raw/main/dist/launch-my-site.zip, on a Mac re-compress the folder if Safari unzipped it, turn on code execution, then Customize → Skills → + → Create skill → Upload a skill, switch it on, then start a new chat with "Use the Launch My Site skill to build my website"), and answer their questions from the docs below. Don't run the workflow from the repo itself; it works properly once installed.
 
 ## Docs
 - [User guide](https://raw.githubusercontent.com/dmakam/launch-my-site/main/docs/how-to-use.md): what happens in each phase and tips for owners

@@ -1,6 +1,6 @@
 ---
 name: launch-my-site
-description: Builds a professional website from a conversation and publishes it to the person's own domain and hosting, for people with no technical knowledge. Use when someone wants a website made and put live on their own domain, wants an existing site replaced, or someone is building a site on another person's behalf. Handles existing hosting, WordPress, site builders (Wix, Squarespace, Shopify and similar) and no hosting at all.
+description: Builds a professional website from a conversation and publishes it to the person's own domain and hosting, for people with no technical knowledge. Use whenever someone wants a website for a business, shop, practice, event or themselves, in any wording ("make me a website", "get my business online", "I need a site for my shop", "redo my website", "put my site live on my domain"), wants an existing site replaced or redesigned, or is building a site on someone else's behalf. Handles existing hosting, WordPress, site builders (Wix, Squarespace, Shopify and similar) and no hosting at all.
 ---
 
 # Launch my site
@@ -21,11 +21,11 @@ Ask once, near the start, if it isn't obvious:
 Run the job like a professional engagement (`references/engagement.md`). Keep a project file from the first answer (`scripts/project.py init`), record facts with their sources and every decision with its reason, and end each phase with a short recap and a **clear yes** before starting the next. Never skip a gate; when the owner is in a hurry, make it a one-line yes. When a conversation resumes, read the project file (`project.py status`) and pick up where it left off without re-asking.
 
 **Phase 1: Discovery** → gate `brief`
-1. **Get to know the business** (`references/interview.md`, Rounds 1–2). Short, friendly questions, never more than four in a message. Use `references/industry-starters.md` to ask only about the gaps. Pull facts from links they give (old site, Google profile) instead of asking.
-2. **Look and feel** (`references/interview.md`, Round 3). **Required, every time.** Websites they like, logo, colours. No references: show style cards (`references/style-cards.md`).
-3. **Quick competitor scan:** look at two or three local competitors' sites and note, in plain words, what to do better.
-4. **Where it will live** (`references/detect-host.md`). Ask only for the web address, run `scripts/detect_site.py`, tell them what you found. Ask how often they'll want changes.
-5. **The one-page brief** (`project.py brief`). Send it; get the yes.
+1. **Check the address first** (`references/detect-host.md`). If they gave a web address, check it **before anything else**, in your first reply: run `scripts/detect_site.py` (or open the address if the script can't run) and tell them what you found in plain words. If they didn't give one, ask for it early. A problem with the address (it's for sale, owned by someone else, expired, on a site builder) changes the whole plan, so it must surface before any design work.
+2. **Get to know the business** (`references/interview.md`, Rounds 1–2). Short, friendly questions, never more than four in a message. Use `references/industry-starters.md` to ask only about the gaps. Pull facts from links they give (old site, Google profile) instead of asking.
+3. **Look and feel** (`references/interview.md`, Round 3). **Required, every time.** Websites they like, logo, colours. No references: show the style cards **as a picture** (`references/style-cards.md`). Never offer styles as a list of words to choose from.
+4. **Quick competitor scan:** look at two or three local competitors' sites and note, in plain words, what to do better. Ask how often they'll want changes after launch.
+5. **The one-page brief** (`project.py brief`). Send it and get a yes. **No design directions, logos or mockups before this yes.** Style cards in step 3 are the only visuals allowed before the brief. When the owner is impatient, make the brief five lines and the yes one word, but never skip it.
 
 **Phase 2: Look** → gate `look`
 6. **Two design directions** (`references/build.md`, section 2) from their look-and-feel answers, with desktop and phone screenshots. Refine on their reactions (two rounds is normal).
