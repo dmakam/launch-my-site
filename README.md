@@ -8,7 +8,7 @@ Then upload it in Claude: Customize → Skills → **+** → Create skill → Up
 
 You talk to Claude like you'd talk to a web designer. It asks a few plain questions about your business, shows you style samples with your own name on them, builds the site, checks it on desktop and phone, and helps you put it live on your own web address. It doesn't ask you to find passwords or learn what "DNS" means.
 
-**Watch the 1-minute explainer:** [launch-my-site-explainer-720p.mp4](media/launch-my-site-explainer-720p.mp4) · [How it works](https://dhirajmakam.com/launch-my-site-how-it-works/)
+**Watch the 75-second explainer (v3):** [launch-my-site-explainer-720p.mp4](media/launch-my-site-explainer-720p.mp4) · [How it works](https://dhirajmakam.com/launch-my-site-how-it-works/)
 
 ![Style samples generated for a sample bakery](assets/examples/style-cards-example.png)
 
